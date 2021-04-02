@@ -1,0 +1,5 @@
+<div class="card col" style="width: 300px; margin-bottom: 15px" appRedBorder [options]="isBigDamage()">
+  <h5 class="card-title">{{ pokemon.name }}</h5>
+  <img *ngIf="showWithPictures" src="../../../assets/images/pokemons/{{pokemon.id}}.png" alt="{{ pokemon.name }}" width="100">
+  <button class="btn btn-primary" style="margin-bottom: 15px" (click)="toggleCatchStatus()">{{ catchStatus ? 'Free' : 'Catch'}}</button>
+</div>
